@@ -3,7 +3,8 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+		<link rel="stylesheet" href="mystyles.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
 		<title>Basic jQuery Mobile</title>
@@ -25,10 +26,26 @@
 				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
 				<h2 class="ui-bar ui-bar-a ui-corner-all">Cooking should be a passion</h2>
 				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
+				<div class="ui-grid-a gridAlign">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"><a href="#about" data-role="button" data-icon="info" data-inline="true" data-rel="popup" data-position-to="window" data-transition="pop">About</a></div>
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+				</div>
 				</article>
 			<footer data-role="footer" data-position="fixed">
 				<h4>Copyright &copy; 2015</h4>
 			</footer>
+			<aside data-role="popup" id="about" data-dismissible="false" data-overlay-theme="b" class="popupSize">
+				<header data-role="header"><h1>About</h1></header>
+				<article role="main" class="ui-content">
+					<p>The <em>VmC Recipe Wizard</em> is made possible by HTML5, CSS3, JavaScript, jQuery, jQuery Mobile, Cordova and love.</p>
+				<div class="ui-grid-a gridAlign">
+					<div class="ui-block-a"><a href="#" data-role="button" data-icon="check" data-rel="back" data-inline="true">Ok</a></div>
+					<div class="ui-block-b"><a href="#" data-role="button" data-icon="mail" data-inline="true">Email Me</a></div><!-- To-Do: Add eMail feature via Cordova -->
+				</div>					
+				</article>
+			</aside>
 		</section>
 		<section data-role="page" id="ingredients" data-title="Ingredients">
 			<header data-role="header" data-position="fixed">
@@ -43,7 +60,23 @@
 			</header>
 			<article role="main" class="ui-content">
 				<h2 class="ui-bar ui-bar-a ui-corner-all">Search by Ingredient</h2>
-				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
+				<div class="ui-body">
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search by ingredient..." data-inset="true">
+						<li><a href="#">Artichoke</a></li>
+						<li><a href="#">Chocolate</a></li>
+						<li><a href="#">Cheese</a></li>
+						<li><a href="#">Bacon</a></li>
+						<li><a href="#">Dill</a></li>
+						<li><a href="#">Elderberry</a></li>
+						<li><a href="#">Fennel</a></li>
+					</ul>
+				</div>
+				<div class="ui-grid-a gridAlign">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+				</div>
 				</article>
 			<footer data-role="footer" data-position="fixed">
 				<h4>Copyright &copy; 2015</h4>
@@ -63,6 +96,12 @@
 			<article role="main" class="ui-content">
 				<h2 class="ui-bar ui-bar-a ui-corner-all">All Recipes</h2>
 				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
+				<div class="ui-grid-a gridAlign">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+				</div>
 				</article>
 			<footer data-role="footer" data-position="fixed">
 				<h4>Copyright &copy; 2015</h4>
