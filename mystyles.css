@@ -1,3 +1,19 @@
+.footer-btn-left,
+.footer-btn-right {
+	position: absolute;
+	margin: 0;
+	top: auto;
+	bottom: .24em;
+}
+
+.footer-btn-left {
+	left: 0.4em;
+}
+
+.footer-btn-right {
+	right: 0.4em;
+}
+
 .gridAlign {
 	text-align: center;
 }

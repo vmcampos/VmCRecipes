@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
 		<link rel="stylesheet" href="mystyles.css">
 		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
@@ -11,7 +11,7 @@
 	</head>
 	<body>
 		<section data-role="page" id="home" data-title="Home">
-			<header data-role="header" data-position="fixed">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false">
 				<h1>VmC Recipe Wizard</h1>
 				<nav data-role="navbar">
 					<ul>
@@ -28,13 +28,14 @@
 				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
 				<div class="ui-grid-a gridAlign">
 					<div class="ui-block-a"></div>
-					<div class="ui-block-b"><a href="#about" data-role="button" data-icon="info" data-inline="true" data-rel="popup" data-position-to="window" data-transition="pop">About</a></div>
+					<div class="ui-block-b"></div>
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"></div>
 				</div>
 				</article>
-			<footer data-role="footer" data-position="fixed">
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false">
 				<h4>Copyright &copy; 2015</h4>
+				<a href="#about" data-icon="info" data-iconpos="notext" class="footer-btn-right" data-rel="popup" data-position-to="window" data-transition="pop">About</a>
 			</footer>
 			<aside data-role="popup" id="about" data-dismissible="false" data-overlay-theme="b" class="popupSize">
 				<header data-role="header"><h1>About</h1></header>
@@ -48,7 +49,7 @@
 			</aside>
 		</section>
 		<section data-role="page" id="ingredients" data-title="Ingredients">
-			<header data-role="header" data-position="fixed">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false">
 				<h1>VmC Recipe Wizard</h1>
 				<nav data-role="navbar">
 					<ul>
@@ -59,9 +60,9 @@
 				</nav>
 			</header>
 			<article role="main" class="ui-content">
-				<h2 class="ui-bar ui-bar-a ui-corner-all">Search by Ingredient</h2>
+				<h2 class="ui-bar ui-bar-a ui-corner-all">Recipes by Ingredient</h2>
 				<div class="ui-body">
-					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search by ingredient..." data-inset="true">
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search ingredient..." data-inset="true">
 						<li><a href="#ingArtichoke" data-transition="slide">Artichoke <span class="ui-li-count">3</span></a></li>
 						<li><a href="#">Chocolate <span class="ui-li-count">1</span></a></li>
 						<li><a href="#">Cheese</a></li>
@@ -78,14 +79,14 @@
 					<div class="ui-block-b"></div>
 				</div>
 				</article>
-			<footer data-role="footer" data-position="fixed">
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false">
 				<h4>Copyright &copy; 2015</h4>
 			</footer>
 		</section>
 		<section data-role="page" id="ingArtichoke" data-title="Artichoke">
 			<header data-role="header" data-position="fixed" data-add-back-btn="true">
 				<h1>VmC Recipe Wizard</h1>
-				<a href="#home" data-icon="delete" data-iconpos="notext" data-transition="pop" data-direction="reverse" class="ui-btn-right">Home</a>
+				<a href="#home" data-icon="home" data-iconpos="notext" data-transition="pop" data-direction="reverse" class="ui-btn-right">Home</a>
 			</header>
 			<article role="main" class="ui-content">
 				<h2 class="ui-bar ui-bar-a ui-corner-all">Artichoke</h2>
@@ -105,7 +106,7 @@
 				</article>
 		</section>
 		<section data-role="page" id="allRecipes" data-title="All Recipes">
-			<header data-role="header" data-position="fixed">
+			<header data-role="header" data-position="fixed" data-tap-toggle="false">
 				<h1>VmC Recipe Wizard</h1>
 				<nav data-role="navbar">
 					<ul>
@@ -116,7 +117,7 @@
 				</nav>
 			</header>
 			<article role="main" class="ui-content">
-				<h2 class="ui-bar ui-bar-a ui-corner-all">All Recipes</h2>
+				<h2 class="ui-bar ui-bar-a ui-corner-all">Recipes by Name</h2>
 				<div class="ui-body">
 					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes..." data-inset="true">
 						<li data-icon="carat-d"><a href="#recRecipe1" data-transition="slideup">Recipe 1</a></li>
@@ -131,14 +132,14 @@
 					<div class="ui-block-b"></div>
 				</div>
 				</article>
-			<footer data-role="footer" data-position="fixed">
+			<footer data-role="footer" data-position="fixed" data-tap-toggle="false">
 				<h4>Copyright &copy; 2015</h4>
 			</footer>
 		</section>
 		<section data-role="page" id="recRecipe1" data-title="Recipe 1">
 			<header data-role="header" data-position="fixed" data-add-back-btn="true">
 				<h1>VmC Recipe Wizard</h1>
-				<a href="#home" data-icon="delete" data-iconpos="notext" data-transition="pop" data-direction="reverse" class="ui-btn-right">Home</a>
+				<a href="#home" data-icon="home" data-iconpos="notext" data-transition="pop" data-direction="reverse" class="ui-btn-right">Home</a>
 			</header>
 			<article role="main" class="ui-content">
 				<h2 class="ui-bar ui-bar-a ui-corner-all">Recipe 1</h2>
