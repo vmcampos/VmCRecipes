@@ -62,8 +62,8 @@
 				<h2 class="ui-bar ui-bar-a ui-corner-all">Search by Ingredient</h2>
 				<div class="ui-body">
 					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search by ingredient..." data-inset="true">
-						<li><a href="#">Artichoke</a></li>
-						<li><a href="#">Chocolate</a></li>
+						<li><a href="#ingArtichoke" data-transition="slide">Artichoke <span class="ui-li-count">3</span></a></li>
+						<li><a href="#">Chocolate <span class="ui-li-count">1</span></a></li>
 						<li><a href="#">Cheese</a></li>
 						<li><a href="#">Bacon</a></li>
 						<li><a href="#">Dill</a></li>
@@ -82,6 +82,28 @@
 				<h4>Copyright &copy; 2015</h4>
 			</footer>
 		</section>
+		<section data-role="page" id="ingArtichoke" data-title="Artichoke">
+			<header data-role="header" data-position="fixed" data-add-back-btn="true">
+				<h1>VmC Recipe Wizard</h1>
+				<a href="#home" data-icon="delete" data-iconpos="notext" data-transition="pop" data-direction="reverse" class="ui-btn-right">Home</a>
+			</header>
+			<article role="main" class="ui-content">
+				<h2 class="ui-bar ui-bar-a ui-corner-all">Artichoke</h2>
+				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
+				<h3 class="ui-bar ui-bar-b">Recipes</h3>
+				<ul>
+					<li><a href="#recRecipe1" data-transition="slideup">Recipe 1</a></li>
+					<li>Recipe 2</li>
+					<li>Recipe 3</li>
+				</ul>
+				<div class="ui-grid-a gridAlign">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+				</div>
+				</article>
+		</section>
 		<section data-role="page" id="allRecipes" data-title="All Recipes">
 			<header data-role="header" data-position="fixed">
 				<h1>VmC Recipe Wizard</h1>
@@ -95,7 +117,13 @@
 			</header>
 			<article role="main" class="ui-content">
 				<h2 class="ui-bar ui-bar-a ui-corner-all">All Recipes</h2>
-				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
+				<div class="ui-body">
+					<ul data-role="listview" data-filter="true" data-filter-placeholder="Search recipes..." data-inset="true">
+						<li data-icon="carat-d"><a href="#recRecipe1" data-transition="slideup">Recipe 1</a></li>
+						<li data-icon="carat-d"><a href="#" data-transition="slideup">Recipe 2</a></li>
+						<li data-icon="carat-d"><a href="#" data-transition="slideup">Recipe 3</a></li>
+					</ul>
+				</div>
 				<div class="ui-grid-a gridAlign">
 					<div class="ui-block-a"></div>
 					<div class="ui-block-b"></div>
@@ -106,6 +134,35 @@
 			<footer data-role="footer" data-position="fixed">
 				<h4>Copyright &copy; 2015</h4>
 			</footer>
+		</section>
+		<section data-role="page" id="recRecipe1" data-title="Recipe 1">
+			<header data-role="header" data-position="fixed" data-add-back-btn="true">
+				<h1>VmC Recipe Wizard</h1>
+				<a href="#home" data-icon="delete" data-iconpos="notext" data-transition="pop" data-direction="reverse" class="ui-btn-right">Home</a>
+			</header>
+			<article role="main" class="ui-content">
+				<h2 class="ui-bar ui-bar-a ui-corner-all">Recipe 1</h2>
+				<p class="ui-body">Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. Lorem ipsum dolor imet. </p>
+				<h3 class="ui-bar ui-bar-b">Ingredients</h3>
+				<ul>
+					<li><a href="#ingArtichoke" data-transition="slide">Artichoke</a></li>
+					<li>Salt</li>
+					<li>Pepper</li>
+				</ul>
+				<h3 class="ui-bar ui-bar-b">Preparation</h3>
+				<ol>
+					<li>Chop artichokes</li>
+					<li>Add salt</li>
+					<li>Stir pepper</li>
+					<li>Enjoy</li>
+				</ol>
+				<div class="ui-grid-a gridAlign">
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+					<div class="ui-block-a"></div>
+					<div class="ui-block-b"></div>
+				</div>
+				</article>
 		</section>
 	</body>
 </html>
